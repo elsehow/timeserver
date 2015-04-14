@@ -1,5 +1,4 @@
-express = require('express')
-app = express()
+app = require('express')()
 
 // allow CORS
 app.use(function(req, res, next) {
