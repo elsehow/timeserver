@@ -1,0 +1,17 @@
+{
+  "name": "timeserver",
+  "version": "0.0.1",
+  "description": "a tiny timeserver gives time via a GET req to /",
+  "main": "timeserver.js",
+  "dependencies": {
+    "express": "^4.12.3"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "elsehow",
+  "license": "MIT"
+}
