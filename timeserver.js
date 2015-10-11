@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var restify = require('restify')
   , argv = require('minimist')(process.argv.slice(2))
   , port = parseInt(argv._)

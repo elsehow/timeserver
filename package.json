@@ -1,16 +1,13 @@
 {
   "name": "timeserver",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a tiny timeserver",
   "main": "timeserver.js",
   "dependencies": {
     "minimist": "^1.2.0",
     "restify": "^3.0.2"
   },
-  "scripts": {
-    "start": "node timeserver.js",
-  },
-  "bin": {"timeserver": "./timeserver.js" } 
+  "bin": {"timeserver": "./timeserver.js" },
   "author": "elsehow",
   "license": "MIT"
 }
