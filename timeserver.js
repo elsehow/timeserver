@@ -1,8 +1,9 @@
 var restify = require('restify')
+  , argv = require('minimist')(process.argv.slice(2))
+  , port = parseInt(argv._)
+  , server = restify.createServer({})
 
-port = 16649
-
-var server = restify.createServer({});
+if (!port) { port = 8888 }
 
 // allow CORS
 server.use(
@@ -10,7 +11,7 @@ server.use(
     res.header("Access-Control-Allow-Origin", "*")
     res.header("Access-Control-Allow-Headers", "X-Requested-With")
     res.header("Content-Type", "text/plain")
-    return next();
+    return next()
   }
 )
 
@@ -21,4 +22,4 @@ server.get('/', function (req, res, next) {
 
 // run server
 server.listen(port)
-console.log('listening on port ' + port)
+console.log('listening on 0.0.0.0:' + port)
