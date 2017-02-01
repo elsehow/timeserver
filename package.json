@@ -1,13 +1,35 @@
 {
   "name": "timeserver",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "a tiny timeserver",
   "main": "timeserver.js",
   "dependencies": {
     "minimist": "^1.2.0",
-    "restify": "^3.0.2"
+    "restify": "^4.3.0"
   },
-  "bin": {"timeserver": "./timeserver.js" },
+  "bin": {
+    "timeserver": "./timeserver.js"
+  },
   "author": "elsehow",
-  "license": "MIT"
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "runwatch": "^0.1.7",
+    "simple-get": "^2.4.0",
+    "tape": "^4.6.3"
+  },
+  "scripts": {
+    "test": "tape test.js",
+    "watch": "runwatch \"*.js\" -r \"npm test\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elsehow/timeserver.git"
+  },
+  "keywords": [
+    "timeserver"
+  ],
+  "bugs": {
+    "url": "https://github.com/elsehow/timeserver/issues"
+  },
+  "homepage": "https://github.com/elsehow/timeserver#readme"
 }
